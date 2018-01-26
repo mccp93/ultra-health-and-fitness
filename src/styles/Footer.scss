@@ -1,0 +1,130 @@
+$ultra-blue: #006afe;
+$nav-black: #2a2a2a;
+$nav-font: #ffffff;
+$nav-highlight: #3e3e3e;
+$ultra-grey: #535554;
+
+.footerContainer {
+  background-color: #1c1c1c;
+  box-shadow: 0px 1000px 0px 1000px #1c1c1c;
+  max-width: 100% !important;
+}
+
+.footerWrapper {
+  background-color: #1c1c1c;
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.footerWrapper > div:last-child {
+  height: 200px;
+}
+
+@media (max-width: 920px) {
+  .footerWrapper {
+    flex-direction: column;
+  }
+
+  .footerWrapper > div:last-child {
+    height: 200px !important;
+  }
+
+  .footerCol {
+    width: 100% !important;
+  }
+}
+
+.footerCol {
+  width: 25%;
+  text-align: center;
+}
+
+.footerTitle {
+  height: 22%;
+  display: flex;
+  align-items: center;
+  color: $nav-font;
+  font-family: 'Heebo';
+  font-size: 18px;
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+
+.powered {
+  margin-top: 15px;
+}
+
+.footerList {
+  color: white;
+  font-family: 'Open Sans';
+
+  ul {
+    list-style: none;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 1em;
+
+    li {
+      padding: 5px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    flex: 2;
+    text-align: center;
+  }
+
+  div:last-child {
+    padding-bottom: 20px;
+  }
+}
+
+.social [class*='fa fa-'] {
+  border-radius: 15px;
+  color: #fff;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  margin: auto 3px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  background-color: #46c0fb;
+}
+
+.fa-facebook {
+  background-color: #3b5998;
+}
+
+.fa-instagram {
+  background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  height: 29px;
+  width: 29px;
+}

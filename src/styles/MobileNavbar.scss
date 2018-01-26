@@ -1,0 +1,157 @@
+$ultra-blue: #006afe;
+$nav-black: #2a2a2a;
+$nav-font: #ffffff;
+$nav-highlight: #3e3e3e;
+$ultra-grey: #535554;
+
+#mobile-nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  background-color: $nav-black;
+  justify-content: center;
+  width: 100%;
+}
+
+.mobile-collapse-menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0%;
+}
+
+.mobile-nav-menu {
+  padding: 10px !important;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.mobile-nav-menu-open {
+  padding: 10px !important;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $nav-highlight;
+  color: darkgrey;
+}
+
+.mobile-nav-menu:hover {
+  background-color: $nav-highlight;
+  border-radius: 0px;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+#mobile-nav li {
+  padding: 10px !important;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#mobile-nav li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#mobile-nav li a:visited {
+  color: white;
+}
+
+#mobile-nav li:hover {
+  background-color: $nav-highlight;
+  border-radius: 0px;
+}
+
+.hamburger {
+  background-color: $nav-black;
+  color: white;
+}
+
+@media (max-width: 755px) {
+  .hamburger-container {
+    display: block !important;
+  }
+}
+
+.hamburger-container {
+  text-align: center;
+  display: none;
+  background-color: $nav-black;
+}
+
+#nav-icon3 {
+  background-color: white;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 15px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 25px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 35px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 25px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 25px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3 {
+  width: 50px;
+  height: 55px;
+  position: relative;
+  margin: 50px auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: $nav-black;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: $nav-font;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}

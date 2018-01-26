@@ -1,0 +1,124 @@
+$ultra-blue: #006afe;
+$nav-black: #2a2a2a;
+$nav-font: #ffffff;
+$nav-highlight: #3e3e3e;
+$ultra-grey: #535554;
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #2174fe;
+  /* Background pattern from Subtle Patterns */
+  background-image: url('/public/img/patterns/ps-neutral.png');
+  background-repeat: repeat;
+}
+
+.cost-wrapper {
+  max-width: 960px;
+
+  text-align: center;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5px;
+  box-shadow: 2px 9px 10px 1px rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1300px) {
+  .price-title {
+    span {
+      font-size: 40px !important;
+    }
+  }
+
+  .price-amount {
+    span {
+      font-size: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .price-title {
+    height: 50px !important;
+
+    span {
+      font-size: 25px !important;
+    }
+  }
+
+  .cost-wrapper {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
+
+  .price-amount {
+    span {
+      font-size: 18px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .price-title {
+    height: 40px !important;
+
+    span {
+      font-size: 16px !important;
+    }
+  }
+
+  .cost-wrapper {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+
+  .price-amount {
+    span {
+      font-size: 12px !important;
+    }
+  }
+
+  .price-text {
+    font-size: 14px !important;
+  }
+}
+
+.price-title {
+  background-color: $nav-black;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 60px;
+    font-family: 'Heebo', sans-serif;
+  }
+}
+
+.price-text {
+  padding: 10px;
+}
+
+.price-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  span {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+  }
+}

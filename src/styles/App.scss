@@ -1,0 +1,24 @@
+$nav-black: #2a2a2a;
+
+html {
+  background: #dddddd; /* Old browsers */
+  background-image: url('/public/img/patterns/big-scanlines.png');
+  background-repeat: repeat;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.banner-area {
+}
+
+.bodyWrap {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1920px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}

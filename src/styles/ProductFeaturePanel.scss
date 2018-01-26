@@ -1,0 +1,19 @@
+.product-feature-wrapper {
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.product-feature-wrapper > div:first-child {
+  margin-left: 0px !important;
+}
+
+.product-feature-wrapper > div:last-child {
+  margin-right: 0px !important;
+}
+
+@media (max-width: 800px) {
+  .product-feature-wrapper {
+    flex-direction: column !important;
+  }
+}

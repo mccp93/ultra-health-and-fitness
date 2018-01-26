@@ -1,0 +1,37 @@
+.clinic-items {
+  flex: 2;
+  text-transform: uppercase;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.clinic-image {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .carousel-wrapper {
+    display: none;
+  }
+}
+
+.carousel-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.clinic-image-small {
+  display: none;
+  height: 100%;
+  width: 95%;
+}
+
+@media (max-width: 800px) {
+  .clinic-image-small {
+    display: initial !important;
+    padding: 10px;
+  }
+}

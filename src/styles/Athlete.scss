@@ -1,0 +1,170 @@
+$ultra-blue: #006afe;
+$nav-black: #2a2a2a;
+$nav-font: #ffffff;
+$nav-highlight: #3e3e3e;
+$ultra-grey: #535554;
+
+.athlete-wrapper {
+  background-color: white;
+  background-repeat: repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border: 2px solid white;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.athlete-image-wrapper {
+  width: 100%;
+  height: 350px;
+}
+
+.athlete-image {
+  width: 100%;
+}
+
+.athlete-body {
+  background-color: white;
+}
+
+.athlete-title {
+  background-color: white;
+  margin-bottom: 0px !important;
+  padding: 2px;
+  text-align: center;
+}
+
+.athlete-name {
+  background-color: $ultra-blue;
+  text-transform: uppercase;
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.athlete-sport {
+  background-color: $nav-highlight;
+  text-transform: uppercase;
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.athlete-body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.athlete-text {
+  font-size: 14px;
+  padding: 10px;
+  padding-top: 2px;
+  background-color: white;
+}
+
+.athlete-workout {
+  background-color: white;
+  text-align: center;
+}
+
+.athlete-workout-title {
+  background-color: $ultra-blue;
+  text-transform: uppercase;
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+}
+
+.athlete-sample-exercise {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 0px;
+}
+
+.athlete-exercise {
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  width: 60%;
+  background-color: $nav-black;
+  color: white;
+}
+
+.athlete-reps {
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  width: 40%;
+  background-color: $nav-highlight;
+  color: white;
+}
+
+@media (max-width: 1650px) {
+  .athlete-sport {
+    font-size: 15px;
+  }
+
+  .athlete-image-wrapper {
+    height: 300px;
+  }
+
+  .athlete-name {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .athlete-image-wrapper {
+    height: 180px;
+  }
+
+  .athlete-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .athlete-image-wrapper {
+    height: 400px;
+  }
+
+  .athlete-name {
+    font-size: 20px;
+  }
+
+  .athlete-sport {
+    font-size: 20px;
+  }
+
+  .athlete-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .athlete-image-wrapper {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .athlete-image-wrapper {
+    height: 250px;
+  }
+
+  .athlete-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .athlete-image-wrapper {
+    height: 150px;
+  }
+}

@@ -1,0 +1,35 @@
+$nav-black: #3c3c3c;
+
+.main-wrapper {
+  background-color: white;
+  background-image: url('/public/img/patterns/scanline.png');
+  background-repeat: repeat;
+  display: flex;
+  flex: 1;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+*::-moz-selection {
+  background-color: transparent;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  /*IE10*/
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input[type='text'],
+textarea,
+[contenteditable] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
